@@ -1,0 +1,47 @@
+option 1 - dynamic soil properties
+    1
+    2
+    6 #0 modulus reduction for soil type 0
+1.00000   44.00000  44.70000  2.80000   7.00000   9.00000   
+2.000     42.000    4.000     4.900     4.900     4.900     
+    6 #0 damping for soil type 0
+1.00000   44.00000  44.70000  2.80000   7.00000   9.00000   
+2.000     42.000    4.000     4.900     4.900     4.900     
+    6 #1 modulus reduction for soil type 1
+44.70000  66.00000  66.00000  2.80000   9.00000   9.00000   
+44.700    66.000    66.000    2.800     4.900     4.900     
+    6 #1 damping for soil type 1
+44.70000  66.00000  66.00000  2.80000   9.00000   9.00000   
+44.700    66.000    66.000    2.800     4.900     4.900     
+    1    0
+option 2 -- soil profile
+    2
+    1    2
+    1    0         0.0000                0.00    0.0000    0.0000
+   44    0                               0.00    0.0000    0.0000
+option 3 -- input motion
+    3
+ 2000 4096      0.01                                  (8f10.6)
+            0.075886      25.0    3    8
+option 4 --sublayer where input motion is applied (within or cropping)
+    4
+   44    1
+option 5 --number of iteraction & ratio of avg strain to max strain
+    5
+    1   20      0.60
+option 6 --sublayers for which accn. time histories are to computed & saved
+    6
+    1   44
+    1    1
+    0    0
+option 7 -- sublayer for which shear stresses or strains are computed & saved
+    7
+    1    1    1      2000
+    1    0    1      2000
+option 9 -- compute & save response spectrum
+    9
+    1    0
+    1    0     981.0
+   0.05
+excution will stop when program encounters 0
+    0

@@ -59,7 +59,6 @@ class Ui_Form(QWidget):
                                    win32process.CREATE_NEW_CONSOLE, None, None, win32process.STARTUPINFO())
         self.type_in(p1, p2, p3, time_delay=1.0)
 
-
     def type_in(self, dat_file, out_1, out_2, time_delay=1.0):
         time.sleep(0.5 * time_delay)
         keyboard = Controller()
